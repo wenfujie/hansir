@@ -1,0 +1,33 @@
+// 边框
+.border-t1-E6 {
+    border-top: solid computed(1) #E6E6E6;
+}
+
+.border-b1-c {
+    border-bottom: solid computed(1) #cccccc;
+}
+
+.border-b1-E6 {
+    border-bottom: solid computed(1) #E6E6E6;
+}
+
+.border-1-c {
+    border: solid computed(1) #cccccc;
+}
+
+.border-1-w {
+    border: solid computed(1) #fff;
+}
+
+.border-dash-c {
+    border: dashed computed(1) #cccccc;
+}
+
+.no-right-border {
+    border-right: none;
+}
+
+.no-border {
+    border: none;
+    outline: none;
+}

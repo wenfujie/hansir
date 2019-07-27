@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "wxUnionid": "QPSCp1V3",
+        "publicAccount": "LB36Ji0S",
+        "grantType": "authorization_code",
+        "xfAppId": "5c1da03d",
+        "xfAPIKey": "77a9107a8a37d54a8962d970dd5a81ba"
+    },
+    "preprod": {
+        "wxUnionid": "AHci08DY",
+        "publicAccount": "YtZhhY7i",
+        "grantType": "authorization_code"
+    },
+    "prod": {
+        "wxUnionid": "fyua8qnw",
+        "publicAccount": "t4EL0NjU",
+        "grantType": "authorization_code"
+    }
+}

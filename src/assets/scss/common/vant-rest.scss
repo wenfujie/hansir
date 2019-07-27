@@ -1,0 +1,201 @@
+/*
+ * @Author: yongtian.hong
+ * @Date: 2018-11-07 15:18:20
+ * @LastEditors: yongtian.hong
+ * @LastEditTime: 2018-11-08 20:19:39
+ * @Description: 复写vant组件样式
+ */
+
+//dialog样式覆盖
+.van-dialog__content {
+    text-align: center;
+}
+
+.van-dialog__confirm .van-button__text {
+    color: $maincolor;
+    font-size: computed(32) !important;
+}
+
+.van-dialog__message {
+    font-size: computed(32) !important;
+}
+
+.van-dialog__cancel {
+    .van-button__text {
+        color: #999;
+        font-size: computed(32) !important;
+    }
+}
+
+.member-information .van-radio .van-icon-checked {
+    color: #0D0E09;
+}
+
+.member-information .van-checkbox {
+    float: left;
+    margin-top: 4vw;
+    margin-right: 4vw;
+    font-size: 3.73333vw;
+    line-height: 4vw;
+}
+
+.van-checkbox .van-checkbox__icon--checked .van-icon {
+    background-color: #0d0e09 !important;
+    border-color: #0d0e09 !important;
+}
+
+.form-row .van-radio .van-icon-checked {
+    color: #0D0E09;
+}
+
+.container .van-tabs--line .van-tabs__wrap {
+    height: computed(90);
+}
+
+.container .van-tab {
+    font-size: computed(30);
+    font-weight: 500;
+}
+
+.pain-style .pain-dalog {
+    width: computed(650);
+    height: computed(460);
+    background: rgba(255, 255, 255, 1);
+    border-radius: computed(10);
+    overflow: initial;
+}
+
+.pain-dalog_point {
+    width: 100%;
+    height: computed(744);
+    background-color: transparent !important;
+    // background:rgba(255,255,255,1);
+    // background-image: url('../assets/images/volume/redBag.png');
+    border-radius: computed(10);
+    overflow-y: initial !important;
+}
+
+// .container .van-tabs__line{
+//     width: computed(375)!important;
+// }
+
+//单选框颜色覆盖
+.van-radio .van-icon-checked {
+    color: $blackcolor !important;
+}
+
+//picker样式覆盖
+.van-picker__toolbar {
+    background: #F8F8F8;
+}
+
+.van-hairline--top-bottom::after {
+    border-width: 2px 0 !important;
+    border-color: #DBDBDB !important;
+}
+
+.van-picker__confirm {
+    color: $maincolor !important;
+}
+
+.van-picker__cancel {
+    color: $blackcolor !important;
+}
+
+.van-picker-column__item--selected {
+    //color: $maincolor!important;
+}
+
+[class*=van-hairline]::after {
+    display: none
+}
+
+// .design .van-list{
+//     height: computed(1700);
+// }
+
+//覆盖loading样式
+.van-loading--white {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+//.cell-content .van-cell {
+//    width: 100%;
+//    height: computed(88);
+//    background: rgba(246, 246, 246, 1);
+//}
+//
+//.cell-content .van-cell .van-cell__value {
+//    margin-top: computed(18);
+//    padding: 0 computed(30);
+//}
+
+.pain_row{
+    .van-cell{
+        background: #f6f6f6;
+    }
+    input{
+        padding-left: 3.6vw;
+    }
+    .van-field__body{
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.van-pull-refresh {
+    //min-height: -webkit-fill-available;
+    //min-height: -moz-fill-available;
+    //min-height: -moz-available; /* FireFox目前这个生效 */
+    //min-height: fill-available;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.van-pull-refresh__track {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-detail .detail-cell .cell-content .van-cell, .member-information .cell-content .van-cell{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: computed(88);
+    padding: 0 computed(10);
+    border: none;
+    font-size: computed(30);
+    line-height: computed(88);
+    color: #0D0E09;
+    position: relative;
+    /* 解决ios版微信浏览器的边框和阴影*/
+    border-radius: 0;
+    box-shadow:0 0 0 rgba(0,0,0,0);
+    -webkit-appearance:none;
+}
+.address-detail-text .van-cell {
+    padding: 0;
+    textarea {
+        display: block;
+        width: 100%;
+        height: computed(100);
+        border: none;
+        resize: none;
+        font-size: computed(28);
+        line-height: computed(40);
+        color: #0D0E09;
+    }
+}
+.point-content .van-pull-refresh{
+    display: inline-block;
+}
+.integral .van-pull-refresh{
+    width: 100%;
+}
+// .v-design .van-list{
+//     width: 100%;
+// }

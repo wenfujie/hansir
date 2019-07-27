@@ -1,0 +1,89 @@
+.member-information{
+    overflow: hidden;
+    padding-bottom: computed(94);
+    .title{
+        font-size: computed(36);
+        line-height: computed(36);
+        margin: computed(30);
+        color: #0D0E09;
+        font-weight: bold;
+    }
+    .detail-cell{
+        box-sizing: border-box;
+        display: flex;
+        height: computed(100);
+        margin: 0 computed(30);
+        position: relative;
+        border-bottom: solid 1px #e6e6e6;
+        &:nth-child(1) {
+         margin-top: computed(30);
+        }
+        &:last-child{
+         border-bottom: none;
+        }
+        .cell-title{
+            display: flex;
+            flex: inherit;
+            align-items: center;
+            justify-content: inherit;
+            width: computed(140);
+            min-width: computed(140);
+            font-size: computed(28);
+            line-height: computed(30);
+            color: #0D0E09;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .cell-content{
+            width: 100%;
+            margin-left: computed(10);
+            text-align: left;
+            .user-img-cell{
+                margin-top: computed(14);
+                width: computed(72);
+                height: computed(72);
+                overflow: hidden;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .label-text{
+                padding: 0 computed(10);
+                font-size: computed(30);
+                line-height: computed(100);
+                color: #0D0E09;
+            }
+            .color-gray{
+                color: #D2D2D2;
+            }
+            .color-black{
+                color: #0D0E09;
+            }
+            .van-radio{
+                float: left;
+                margin-top: computed(30);
+                margin-right: computed(30);
+                font-size: computed(28);
+                line-height: computed(30);
+            }
+        }
+        .cell-content input{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: computed(98);
+            padding: 0 computed(10);
+            border: none;
+            font-size: computed(30);
+            line-height: computed(100);
+            color: #0D0E09;
+            position: relative;
+            /* 解决ios版微信浏览器的边框和阴影*/
+            border-radius: 0;
+            box-shadow:0 0 0 rgba(0,0,0,0);
+            -webkit-appearance:none;
+        }
+    }
+}

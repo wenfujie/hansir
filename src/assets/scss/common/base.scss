@@ -1,0 +1,112 @@
+//CSS初始化
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+button {
+  outline: 0;
+  border: 0;
+}
+
+input {
+  background: #ffffff;
+}
+
+// 防止vue页面数据未渲染时的闪烁
+[v-cloak] {
+  display: none
+}
+
+.comment-close-36 {
+  font-size: computed(36);
+  color: #999999;
+  text-align: right;
+  position: fixed;
+  right: computed(16);
+  top: computed(20);
+  z-index: 9999;
+}
+
+html,
+body {
+  background: #ffffff;
+  font-family: 'PingFang-SC-Medium';
+  color: #0D0E09;
+}

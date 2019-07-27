@@ -1,0 +1,191 @@
+/*
+* create by junyong.hong
+* email 125173449@qq.com
+* time 2018/11/12
+* description 通用样式：我的优惠券、优惠券列表
+*/
+.vouchers{
+  $whiteColor: #FFFFFF;
+  $descColor: #FAFAFA;
+  $grayColor: #F5F5F5;
+  $titleColor: #333333;
+  $dataColor: #999999;
+  $rightColor: #0D0E09;
+  $redColor: #C41717;
+  $addCardColor: #D2D2D2;
+
+  .vouchers-list{
+    -webkit-overflow-scrolling : touch;
+    padding: computed(30) computed(30) 0 computed(30);
+    .vouchers-item{
+      min-height: computed(180);
+      background: url('../assets/images/vouchers/vouchers-bg.png');
+      background-size: 100% 100%;
+      margin-bottom: computed(30);
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .item{
+        display: flex;
+        flex-direction: row;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        .item-price{
+          width: computed(168);
+          height: computed(180);
+          vertical-align: middle;
+          text-align: center;
+          overflow-x: hidden;
+          overflow-y: hidden;
+
+          /* 垂直居中 */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .price{
+            span:nth-child(1){
+              font-size: computed(24);
+              color: $titleColor;
+            }
+            span:nth-child(2){
+              margin-left: computed(12);
+              font-size: computed(36);
+              color: $rightColor;
+              font-weight:bold;
+              box-sizing: border-box;
+
+              /* 允许在单词内换行 */
+              word-break: break-all;
+              /* 在长单词或 URL 地址内部进行换行 */
+              word-wrap: break-word;
+            }
+          }
+          .discount{
+            span:nth-child(1){
+              font-size: computed(52);
+              font-weight: bold;
+              color: $rightColor;
+
+              /* 允许在单词内换行 */
+              word-break: break-all;
+              /* 在长单词或 URL 地址内部进行换行 */
+              word-wrap: break-word;
+            }
+            span:nth-child(2){
+              margin-left: computed(10);
+              font-size: computed(24);
+              color: $titleColor;
+            }
+          }
+        }
+        .item-info{
+          flex: 1 1 auto;
+          padding: computed(29) computed(22) computed(31) computed(22);
+          /* 设置内容过宽，不被挤压 */
+          width: 1px;
+          .info-title{
+            display: flex;
+            flex-direction: row;
+            font-size: computed(28);
+            line-height: computed(28);
+            color: $rightColor;
+            > span:first-child{
+              flex: 1;
+              padding-right: computed(30);
+            }
+            .info-title-status{
+              width: computed(85);
+              float: right;
+              color: $rightColor !important;
+            }
+          }
+          .info-date{
+            font-size: computed(26);
+            line-height: computed(26);
+            margin: computed(24) 0;
+            color: $dataColor;
+            word-break: break-all;
+            word-wrap: break-word;
+            > span{
+              color: $rightColor;
+              font-size: computed(26);
+              margin-right: computed(15);
+            }
+          }
+          .info-description{
+            font-size: computed(24);
+            line-height: computed(24);
+            color: $dataColor;
+            i{
+              margin-left: computed(10);
+              font-size: computed(30);
+              &.tran-up:before{
+                display: inline-block;
+                transform: rotate(-180deg);
+                transition: .3s;
+              }
+              &.tran-down:before{
+                display: inline-block;
+                transform: rotate(0deg);
+                transition: .3s;
+              }
+            }
+          }
+        }
+        .item-buy{
+          width: computed(180);
+          margin: computed(29) computed(29) 0 0;
+          text-align: right;
+          .buy-price{
+            color: $redColor;
+            font-weight: bold;
+            &.fs32{
+              font-size: computed(32);
+            }
+            &.fs24{
+              font-size: computed(24);
+            }
+            &.fs24-gray{
+              font-size: computed(24);
+              color: $addCardColor;
+            }
+          }
+          .buy-btn{
+            display: inline-block;
+            text-align: center;
+            margin-top: computed(25);
+            width: computed(130);
+            background-color: $rightColor;
+            color: $whiteColor;
+            padding: computed(14) 0;
+            font-size: computed(28);
+          }
+        }
+      }
+      .item-desc{
+        margin-top: computed(-4);
+        padding-left: computed(28);
+        min-height: computed(88);
+        line-height: computed(88);
+        background-color: $descColor;
+        color: $titleColor;
+        font-size: computed(24);
+      }
+    }
+    &:last-child{
+      padding-bottom: computed(30);
+    }
+  }
+  .none{
+    display: none;
+  }
+  .gray-color{
+    color: $dataColor !important;
+    > span{
+      color: $dataColor !important;
+    }
+  }
+}

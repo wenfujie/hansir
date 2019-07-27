@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "webServer on node by koa2",
+  "main": "app.js",
+  "scripts": {
+    "local": "nodemon  --inspect ./bin/app.js",
+    "test": "nodemon  --inspect ./bin/app.js   test",
+    "dev": "nodemon --inspect ./bin/app.js  dev",
+    "prod": "nodemon  ./bin/app.js  prod",
+    "preprod": "nodemon  ./bin/app.js  preprod",
+    "start": "pm2 start ./pm2.config.js && pm2 save",
+    "restart": "pm2 restart ./pm2.config.js",
+    "reload": "pm2 reload ./pm2.config.js",
+    "stop": "pm2 stop ./pm2.config.js",
+    "monit": "pm2 monit"
+  },
+  "keywords": [
+    "koa2",
+    "node",
+    "server"
+  ],
+  "author": "vshen",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ip": "^1.1.5",
+    "koa": "^2.5.1",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.0",
+    "koa-cors": "0.0.16",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.2",
+    "koa-static": "^4.0.3",
+    "koa-views": "^6.1.4",
+    "log4js": "^2.9.0",
+    "moment": "^2.22.2",
+    "nodemon": "^1.8.1",
+    "pm2": "^2.10.4",
+    "request-promise": "^4.2.2",
+    "winston": "^3.0.0",
+    "winston-daily-rotate-file": "^3.2.3"
+  }
+}

@@ -1,0 +1,187 @@
+.design{
+    .successBox{
+        width:computed(650);
+        height:computed(386);
+        background:rgba(255,255,255,1);
+        border-radius:computed(10);
+        position: relative;
+        .li-row{
+            text-align: center;
+            .Icon_success{
+                margin-top: computed(30);
+                display: inline-block;
+                width: computed(100);
+                height: computed(100);
+                border: computed(1) dashed rgb(136, 136,136);
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .li-word{
+                font-size:computed(36);
+                font-weight:bold;
+                color:rgba(213,175,110,1);
+                margin-top: computed(19);
+            }
+            .li-word1{
+                font-size:computed(28);
+                font-weight:500;
+                color:rgba(102,102,102,1);
+                margin-top: computed(60);
+            }
+            .li-action{
+                font-size:computed(28);
+                font-weight:500;
+                color:rgba(13,14,9,1);
+                margin-top: computed(60);
+                i{
+                    font-size: computed(14);
+                    color:rgba(13,14,9,1);
+                }
+            }
+        }
+        .closeIcon{
+            // border: computed(1) dashed rgb(136,136,136);
+            z-index: 10000000;
+            width: computed(64);
+            height: computed(64);
+            display: inline-block;
+            position: absolute;
+            bottom: computed(-184);
+            left: 44%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .van-tab--active{
+      color: #C41717!important;
+    }
+    .submit{
+        width:computed(690);
+        height:computed(94);
+        background:rgba(196,23,23,1);
+        font-size:computed(30);
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        line-height: computed(94);
+        text-align: center;
+        margin: 0 auto;
+       }
+    .toast{
+        font-size:computed(36);
+        font-weight:bold;
+        color:rgba(13,14,9,1);
+        margin-top: computed(59);
+        margin-left:computed(29);
+        margin-bottom:computed(27);
+    }
+   .company-content{
+       .form{
+           padding: 0 computed(30);
+           .form-row{
+               position: relative;
+               margin: computed(30) 0;
+               .input-radio{
+                   .van-radio{
+                       margin-top: computed(16);
+                       margin-right: computed(57);
+                       display: inline-block!important;
+                       overflow:inherit;
+                       .van-radio__input{
+                            .van-icon-checked{
+                                color: rgb(13, 14, 9)!important;
+                            }
+                        i{
+                            color: rgb(13, 14, 9)!important;
+                        }
+                        }
+                   }
+                   
+               }
+               .dangwei{
+                    position: absolute;
+                    right: computed(29);
+                    top: computed(18);
+                    font-size:computed(30);
+                    font-weight:500;
+                    color:rgba(13,14,9,1);
+               }
+               .row-label{
+                    display: inline-block;
+                    width: computed(149);
+                    font-size:computed(30);
+                    font-family:PingFang-SC-Medium;
+                    font-weight:500;
+                    color:rgba(13,14,9,1);
+               }
+               textarea{
+                    box-sizing: border-box;
+                    padding-left: computed(32);
+                    padding-top: computed(29);
+                    width:computed(540);
+                    height:computed(132);
+                    background:rgba(246,246,246,1);
+                    font-size:computed(30);
+                    font-family:PingFang-SC-Medium;
+                    font-weight:500;
+                    color:rgba(153,153,153,1);
+                    outline:none;
+                    -webkit-appearance: none;
+                    border-radius: 0;
+                    border: none;
+               }
+               input{
+                    box-sizing: border-box;
+                    padding-left: computed(32);
+                    padding-right: computed(70);
+                    width:computed(540);
+                    height:computed(88);
+                    background:rgba(246,246,246,1);
+                    font-size:computed(30);
+                    font-family:PingFang-SC-Medium;
+                    font-weight:500;
+                    color:rgba(153,153,153,1);
+                    outline:none;
+                    -webkit-appearance: none;
+                    border-radius: 0;
+                    border: none;
+               }
+               .row-div{
+                    float: left;
+                    line-height: computed(88);
+                    display: inline-block;
+                    width: computed(149);
+                    font-size:computed(30);
+                    font-family:PingFang-SC-Medium;
+                    font-weight:500;
+                    color:rgba(13,14,9,1);
+               }
+               .input-dialog{
+                    display: inline-block;
+                    box-sizing: border-box;
+                    padding-left: computed(32);
+                    width:computed(540);
+                    height:computed(88);
+                    line-height: computed(88);
+                    background:rgba(246,246,246,1);
+                    font-size:computed(30);
+                    font-family:PingFang-SC-Medium;
+                    font-weight:500;
+                    color:rgba(153,153,153,1);
+                    position: relative;
+                    .icon-img{
+                        position: absolute;
+                        top:computed(0);
+                        right:computed(30);
+                        i{
+                            font-size: computed(24);
+                        }
+                    }
+               }
+           }
+       }
+   } 
+}

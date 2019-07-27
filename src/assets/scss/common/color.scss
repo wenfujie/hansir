@@ -1,0 +1,45 @@
+// 通用颜色
+.blue {
+    color: #2BA4F3 !important;
+}
+
+// 
+.orange {
+    color: $maincolor !important;
+}
+
+.black {
+    color: #0D0E09 !important;
+}
+
+.grey99 {
+    color: #999999 !important;
+}
+
+.grey66 {
+    color: #666666 !important;
+}
+
+.greycc {
+    color: #cccccc !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.bg-gray {
+    background-color: #F5F5F5;
+}
+
+.bg-grey {
+    background-color: #999999;
+}
+
+.bg-red {
+    background-color: $maincolor;
+}
+
+.bg-black {
+    background-color: #0D0E09;
+}
